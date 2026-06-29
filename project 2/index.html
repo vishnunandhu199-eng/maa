@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Order Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <div class="hero-text">
+          <p class="tag">Fresh & Fast</p>
+          <h1>Order Your Favourite Meal</h1>
+          <p>Delicious burgers, pizzas, and wraps made fresh for you.</p>
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="menu-section">
+          <h2>Popular Items</h2>
+          <div class="menu-list">
+            <div class="card">
+              <h3>Veg Pizza</h3>
+              <p>Cheesy pizza with fresh vegetables.</p>
+              <span>₹180</span>
+              <button class="add-btn">Add</button>
+            </div>
+            <div class="card">
+              <h3>Chicken Burger</h3>
+              <p>Juicy grilled chicken burger.</p>
+              <span>₹150</span>
+              <button class="add-btn">Add</button>
+            </div>
+            <div class="card">
+              <h3>Pasta Bowl</h3>
+              <p>Creamy pasta with herbs and cheese.</p>
+              <span>₹140</span>
+              <button class="add-btn">Add</button>
+            </div>
+          </div>
+        </section>
+
+        <aside class="order-summary">
+          <h2>Your Order</h2>
+          <ul id="orderList"></ul>
+          <div class="total">Total: ₹<span id="totalPrice">0</span></div>
+          <button id="checkoutBtn">Checkout</button>
+        </aside>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
